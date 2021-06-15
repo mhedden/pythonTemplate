@@ -34,6 +34,8 @@ def process_command_line(argv):
     parser.add_option("-v", "--verbose", dest="verbose", default=False,
                       action='store_true', help="write debug level logs to log")
     parser.add_option("-L", "--log", dest="logfile", help="write log output to logfile")
+    parser.add_option("-C", "--commit", dest="commit", default=False, action='store_true', 
+                      help="if true, will Commit the data change; if false this script will just log what would have happened if set to true.")
     parser.add_option(  # customized description; put --help last
         '-h', '--help', action='help',
         help='Show this help message and exit.')
